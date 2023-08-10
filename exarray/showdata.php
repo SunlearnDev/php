@@ -1,5 +1,5 @@
 <?php
-$data = include '/xampp/htdocs/learnPhp/datatext.php';
+$data = include '/xampp/htdocs/learnPhp/exarray/datatext.php';
 ?>
 
 <head>
