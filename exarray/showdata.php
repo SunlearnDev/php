@@ -1,5 +1,6 @@
 <?php
 $data = include '/xampp/htdocs/learnPhp/exarray/datatext.php';
+
 ?>
 
 <head>
@@ -21,6 +22,7 @@ $data = include '/xampp/htdocs/learnPhp/exarray/datatext.php';
             <div class="  w-full h-auto  mb-5">
                 <h1 class="td-pro flex w-full h-12 justify-center items-center text-3xl bg-red-800 text-white  rounded-xl">
                     Sản Phẩm Nổi Bật
+                    
                 </h1>
                 <ul class=" flex gird  grid-cols-5 grid-row-1 gap-1 pt-1   w-full h-2/5">
                     <?php foreach ($data['product'] as $product ) { ?>
@@ -29,17 +31,17 @@ $data = include '/xampp/htdocs/learnPhp/exarray/datatext.php';
                             <p class="w-full h-auto"> <?php echo $product['name']; ?></p>
                             <p class="w-full h-auto"> <?php echo $product['price']; ?></p>
                             <div class="flex w-full h-auto">
-                                <?php for ($i = 0; $i < 5; $i++) { ?>
+                                <?php for ($i = 0; $i < rand(1,5); $i++) { ?>
                                     <i <?php echo $product['star']; ?>></i>
                                 <?php } ?>
                                 <p> <?php echo $product['evaluate']; ?></p>
                             </div>
                         </li>
                     <?php } ?>
-                    
+
                 </ul>
             </div>
-            <div class="  w-full h-auto  mb-5">
+            <div class="  w-full h-auto  mb-rand(1,5)">
                 <h1 class="td-pro flex w-full h-12 justify-center items-center text-3xl bg-red-800 text-white  rounded-xl">
                     Sản Phẩm Mới
                 </h1>
@@ -50,14 +52,13 @@ $data = include '/xampp/htdocs/learnPhp/exarray/datatext.php';
                             <p class="w-full h-auto"> <?php echo $productnew['name']; ?></p>
                             <p class="w-full h-auto"> <?php echo $productnew['price']; ?></p>
                             <div class="flex w-full h-auto">
-                                <?php for ($i = 0; $i < 5; $i++) { ?>
+                                <?php for ($i = 0; $i < rand(1,5); $i++) { ?>
                                     <i <?php echo $productnew['star']; ?>></i>
                                 <?php } ?>
                                 <p> <?php echo $productnew['evaluate']; ?></p>
                             </div>
                         </li>
                     <?php } ?>
-                    
                 </ul>
             </div>
 
